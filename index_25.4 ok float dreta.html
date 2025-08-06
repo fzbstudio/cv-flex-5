@@ -1,0 +1,962 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>CV</title>
+        <!-- css -->
+        <style>
+            /* * {
+                outline: 1px dotted red;
+            } */
+
+            /* * {
+                color: transparent !important 
+                background-image: none !important 
+            } 
+
+            /* === RESET GENERAL === */
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            html {
+                color-scheme: light only;
+                font-size: 18px;
+            }
+
+            * {
+                font-family: "Alexandria", helvetica, sans-serif;
+            }
+
+            /* === SCROLL BAR === */
+
+            /* Per a tots els elements amb scroll */
+            * {
+                scrollbar-width: thin;
+                scrollbar-color: hsl(200, 80%, 50%) hsl(200, 80%, 60%);
+            }
+
+            /* Webkit específic */
+            *::-webkit-scrollbar {
+                width: 8px;
+            }
+
+            *::-webkit-scrollbar-track {
+                background: hsl(200, 80%, 50%);
+            }
+
+            *::-webkit-scrollbar-thumb {
+                background: hsl(200, 80%, 56%);
+                border-radius: 4px;
+            }
+
+            *::-webkit-scrollbar-thumb:hover {
+                background: hsl(200, 80%, 45%);
+            }
+
+            /* === COS PRINCIPAL === */
+
+            body {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            /* === FONS ANIMAT === */
+            body {
+                position: relative;
+                min-height: 100vh;
+                background-color: transparent;
+            }
+
+            .gradient {
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 0;
+                width: 100vw;
+                height: 100vh;
+                background: linear-gradient(334deg, hsl(220, 64%, 17%), hsl(215, 74%, 44%), hsl(200, 68%, 55%));
+                background-size: 180% 180%;
+                animation: gradient-animation 10s ease infinite;
+            }
+
+            @keyframes gradient-animation {
+                0% {
+                    background-position: 0% 50%;
+                }
+                50% {
+                    background-position: 100% 50%;
+                }
+                100% {
+                    background-position: 0% 50%;
+                }
+            }
+
+            /* === CONTENIDORS NIVELL 1 === */
+            .CONT_1_EXT {
+                position: relative;
+                z-index: 1;
+                max-width: 1000px;
+                width: 95%;
+                display: flex;
+                outline: 6px solid #000000;
+                border-radius: 30px;
+                margin-top: 50px;
+                margin-bottom: 100px;
+                flex-direction: column;
+                overflow: hidden;
+                height: fit-content;
+                background-color: hsl(205, 100%, 85%);
+            }
+
+            /* === CONTENIDORS NIVELL 2 === */
+            .CONT_2_HEAD {
+                display: flex;
+                flex-direction: column;
+                gap: 0;
+                align-content: flex-start;
+                background-color: hsl(240, 75%, 35%);
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+
+            .CONT_2_TAB {
+            }
+
+            .CONT_2_TAB_ALT {
+                display: flex;
+                flex-direction: row;
+                margin-right: 10px;
+            }
+
+            .CONT_2_EXP {
+                display: flex;
+                flex-direction: row;
+                margin-right: 10px;
+                margin-left: 10px;
+            }
+
+            .CONT_2_EXP_ALT {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .CONT_2_COMPE {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .CONT_2_BLOC_IDM {
+                display: flex;
+                flex-direction: row;
+                margin-top: 10px;
+                margin-bottom: 1px;
+                margin-left: 5px;
+                margin-right: 10px;
+            }
+
+            .CONT_2_CONTACT {
+                display: flex;
+                height: auto;
+                flex-direction: row;
+            }
+
+            .CONT_2_CONT_ICONA_EGO {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100px;
+                padding-bottom: 10px;
+                padding-top: 0;
+                flex-direction: column;
+                align-content: center;
+                margin-bottom: 0;
+                margin-left: auto;
+                margin-right: 25px;
+            }
+
+            /* === CONTENIDORS NIVELL 3 === */
+            .ESQUERRA {
+                display: flex;
+                flex-direction: column;
+                width: 600px;
+            }
+
+            .CONT_3_TAB {
+                /* display: flex */
+                /* flex-direction: row */
+                background-color: hsl(180, 73%, 38%);
+                position: relative;
+                width: fit-content;
+                padding: 6px 25px 6px 10px;
+                border-bottom-right-radius: 35px;
+            }
+
+            .CONT_3_TAB_ALT {
+                background-color: hsl(180, 73%, 38%);
+                display: flex;
+                flex-direction: row;
+                position: relative;
+                width: fit-content;
+                padding: 6px 25px 6px 10px;
+                border-bottom-right-radius: 35px;
+            }
+
+            .CONT_3_EXP_INFO {
+                display: flex;
+                flex-direction: column;
+                flex-grow: 1;
+                justify-content: flex-start;
+                align-content: flex-start;
+                column-gap: 0;
+                margin-top: 4px;
+                width: 600px;
+            }
+
+            .CONT_3_EXP_INFO_ALT {
+                display: flex;
+                flex-direction: column;
+                max-width: 600px;
+                flex-grow: 1;
+                padding-left: 10px;
+                justify-content: flex-start;
+                align-content: flex-start;
+                column-gap: 0;
+                margin-top: 4px;
+            }
+
+            .CONT_3_EXP_ICONA {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100px;
+                padding-bottom: 10px;
+                padding-top: 10px;
+                margin-right: 0;
+                margin-bottom: 0;
+                margin-left: auto;
+                padding-left: 10px;
+            }
+
+            .CONT_3_EXP_ICONA_UP {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100px;
+                padding-bottom: 0;
+                padding-top: 0;
+                flex-direction: column;
+                align-content: center;
+                margin-bottom: 0;
+                margin-left: auto;
+            }
+
+            .CONT_3_CONTACT_INFO {
+                display: flex;
+                flex-direction: column;
+                width: 600px;
+                flex-grow: 1;
+                padding: 10px;
+                justify-content: center;
+                row-gap: 5px;
+            }
+
+            .CONT_3_COMPE {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .CONT_3_IDIOMES {
+                display: inline-block;
+                margin-right: 15px;
+                margin-left: 10px;
+                margin-bottom: 5px;
+                margin-top: 5px;
+            }
+
+            /* === CONTENIDORS NIVELL 4 === */
+            .CONT_4_COMPE_HALF {
+                display: flex;
+                flex-direction: column;
+                flex-shrink: 1;
+                flex-grow: 1;
+            }
+
+            /* === CONTENIDORS NIVELL 5 === */
+            .CONT_5_COMPE_AMBIT {
+                display: flex;
+                flex-direction: row;
+                flex-grow: 1;
+            }
+
+            /* === CONTENIDORS NIVELL 6 === */
+            .CONT_6_COMPE_IMG_1,
+            .CONT_6_COMPE_IMG_2,
+            .CONT_6_COMPE_IMG_3 {
+                width: 150px;
+                min-height: 4rem;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                flex-shrink: 0;
+                column-gap: 10px;
+                align-items: center;
+            }
+
+            .CONT_6_COMPE_TXT {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                flex-grow: 1;
+                flex-shrink: 2;
+            }
+
+            /* ============ FILET =============== */
+            .FILET_EXT {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                height: auto;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .FILET_INT {
+                background-color: grey;
+                height: 1px;
+                width: 100%;
+            }
+
+            .FILET_GRUIX {
+                display: flex;
+                width: 100%;
+                height: 4px;
+                background-color: black;
+            }
+
+            /* ============ IMGS =============== */
+
+            .CONT_2_CONT_ICONA_EGO img {
+                width: 100%;
+                height: auto;
+            }
+
+            .CONT_3_EXP_ICONA img {
+                width: 90px;
+                height: 90px;
+            }
+
+            .CONT_3_EXP_ICONA_UP img {
+                width: 90px;
+                height: 90px;
+            }
+
+            .CONT_6_COMPE_IMG_1 img {
+                width: 60px;
+                height: 60px;
+            }
+
+            .CONT_6_COMPE_IMG_2 img {
+                width: 50px;
+                height: 50px;
+            }
+
+            .CONT_6_COMPE_IMG_3 img {
+                width: 35px;
+                height: 35px;
+            }
+
+            .TAULA_COMPE_GRID_LOGO_1 img {
+                width: 75px;
+                height: 75px;
+            }
+
+            .TAULA_COMPE_GRID_LOGO_2 img {
+                width: 50px;
+                height: 50px;
+            }
+
+            .TAULA_COMPE_GRID_LOGO_3 img {
+                width: 35px;
+                height: 35px;
+            }
+
+            
+            .IMG_FLOAT_DRETA {
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    width: 90px;
+    height: auto;
+}
+            /* ============ TEXT =============== */
+            .TXT_HEAD_NOM {
+                font-weight: 700;
+                text-transform: capitalize;
+                font-size: 1.6rem;
+                color: hsl(240, 0%, 85%);
+                text-align: center;
+                margin-top: 0;
+                padding-top: 3px;
+                padding-bottom: 3px;
+            }
+
+            .TXT_HEAD_POS {
+                text-transform: capitalize;
+                color: hsl(240, 0%, 70%);
+                font-weight: 400;
+                font-size: 1.35rem;
+                padding-top: 3px;
+                padding-bottom: 3px;
+                text-align: center;
+            }
+
+            .TXT_HEAD_LOC {
+                font-style: italic;
+                font-weight: 350;
+                text-transform: capitalize;
+                font-size: 1.25rem;
+                padding-top: 3px;
+                padding-bottom: 3px;
+                color: hsl(0, 0%, 50%);
+                text-align: center;
+            }
+
+            .TXT_TAB {
+                color: white;
+                font-size: 1rem;
+                text-transform: uppercase;
+                font-weight: bold;
+                letter-spacing: 0.03em;
+            }
+
+            .TXT_FEINA_H1 {
+                font-weight: bold;
+                text-transform: capitalize;
+                font-size: 1rem;
+                margin-top: 0;
+                padding-top: 4px;
+                padding-bottom: 2px;
+                margin-bottom: 1px;
+            }
+
+            .TXT_FEINA_H2 {
+                font-weight: bold;
+                text-transform: capitalize;
+                font-size: 1rem;
+                color: hsl(0, 0%, 40%);
+            }
+
+            .TXT_FEINA_P {
+                font-weight: 300;
+                font-size: 1rem;
+                line-height: 1.3;
+                padding-top: 2px;
+                padding-bottom: 8px;
+            }
+
+            .TXT_COMPE_H {
+                font-weight: 600;
+                text-transform: capitalize;
+                font-size: 0.9rem;
+            }
+
+            .TXT_COMPE_P {
+                font-weight: 300;
+                font-size: 0.9rem;
+            }
+
+            .TXT_H {
+                font-weight: bold;
+                font-style: italic;
+                text-transform: capitalize;
+                font-size: 1rem;
+            }
+
+            .TXT_B {
+                font-weight: 650;
+                font-size: 1rem;
+            }
+
+            .TXT_IDIOMA_H {
+                font-weight: bold;
+                text-transform: capitalize;
+            }
+
+            .TXT_IDIOMA_P {
+                font-weight: 300;
+                text-transform: capitalize;
+            }
+
+            /* === TAULES GRID === */
+            .TAULA_IDM_GRID {
+                display: grid;
+                grid-template-columns: auto 250px auto 1fr;
+                gap: 0;
+                align-items: baseline;
+                margin-left: 10px;
+                margin-right: auto;
+                margin-bottom: 10px;
+                margin-top: 10px;
+            }
+
+            .TAULA_IDM_GRID div {
+                padding-left: 1px;
+                padding-right: 5px;
+                padding-top: 5px;
+                padding-bottom: 1px;
+            }
+
+            .TAULA_COMPE_GRID {
+                display: grid;
+                grid-template-columns: 150px 1fr 150px 1fr;
+                gap: 0;
+
+                /* align-items: baseline; */
+                margin-left: 5px;
+                margin-right: 5px;
+                margin-bottom: 10px;
+                margin-top: 10px;
+            }
+
+            .TAULA_COMPE_GRID div {
+                padding-left: 1px;
+                padding-right: 1px;
+                padding-top: 1px;
+                padding-bottom: 1px;
+            }
+
+            .TAULA_COMPE_GRID_CASELLA {
+                align-content: center;
+            }
+
+            .TAULA_COMPE_GRID_LOGO_1,
+            .TAULA_COMPE_GRID_LOGO_2,
+            .TAULA_COMPE_GRID_LOGO_3 {
+                min-height: 4rem;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                flex-shrink: 0;
+                column-gap: 10px;
+                align-items: center;
+            }
+
+            .TAULA_CONTACT_GRID {
+                display: grid;
+                grid-template-columns: auto 250px auto 1fr;
+                gap: 0;
+                align-items: normal;
+                margin-left: 10px;
+                margin-bottom: 15px;
+                margin-top: 15px;
+            }
+
+            .TAULA_CONTACT_GRID div {
+                padding-left: 4px;
+                padding-right: 4px;
+                padding-top: 1px;
+                padding-bottom: 1px;
+            }
+
+            .TAULA_CONTACT_GRID img {
+                width: 20px;
+            }
+
+            /* === MEDIA QUERIES === */
+
+            @media (max-width: 600px) {
+                .TAULA_COMPE_GRID {
+                    grid-template-columns: 200px 1fr;
+                    display: grid;
+                }
+
+                .TAULA_IDM_GRID {
+                    grid-template-columns: auto 1fr;
+                }
+
+                .TAULA_CONTACT_GRID {
+                    grid-template-columns: auto 1fr;
+                }
+            }
+
+            /* --- Per a finestres de menys de 600px --- */
+            @media (max-width: 600px) {
+                .CONT_1_EXT {
+                }
+            }
+
+            /* --- Per a finestres entre 601px i 1500px --- */
+            @media (min-width: 601px) and (max-width: 1500px) {
+                .CONT_1_EXT {
+                }
+            }
+
+            /* --- Per a finestres de més de 1501px --- */
+            @media (min-width: 1501px) {
+                .CONT_1_EXT {
+                }
+            }
+
+            /* Afegir aquesta regla dins del media query existent @media (max-width: 600px) */
+
+            @media (max-width: 600px) {
+                .TAULA_COMPE_GRID {
+                    grid-template-columns: 200px 1fr;
+                    display: grid;
+                }
+
+                .TAULA_IDM_GRID {
+                    grid-template-columns: auto 1fr;
+                }
+
+                .TAULA_CONTACT_GRID {
+                    grid-template-columns: auto 1fr;
+                }
+
+                /* NOVA REGLA: Canviar la direcció del flex per apilar verticalment */
+                .CONT_2_EXP {
+                    flex-direction: column;
+                }
+
+                /* Opcional: Ajustar l'ordre dels elements */
+                .CONT_3_EXP_ICONA {
+                    order: -1; /* Posa la imatge primer */
+                    margin: 10px right; /* Centra la imatge */
+                    width: auto; /* Permet que la imatge tingui el seu tamany natural */
+                }
+
+                /* Assegurar que el text ocupi tot l'ample disponible */
+                .CONT_3_EXP_INFO {
+                    width: 100%;
+                    margin-top: 0;
+                }
+            }
+        </style>
+
+        <!-- font  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap" rel="stylesheet" />
+
+        <!-- indicar al navegador que només vols mode clar -->
+        <meta name="color-scheme" content="light only" />
+        <!-- defineix el color de la barra d'estat en mòbils -->
+        <meta name="theme-color" content="#7fbcd7" />
+    </head>
+
+    <body>
+        <div class="gradient"></div>
+
+        <div class="CONT_1_EXT">
+            <div class="CONT_2_HEAD">
+                <div class="TXT_HEAD_NOM">Fèlix Zurita Bremon</div>
+                <div class="TXT_HEAD_POS">Dissenyador Gràfic, Director d'Art, Tècnic Artfinalista</div>
+                <div class="TXT_HEAD_LOC">Gelida, Barcelona</div>
+            </div>
+            <!-- EXPERIÊNCIA -->
+            <div class="FILET_GRUIX"></div>
+            <div class="CONT_2_TAB">
+                <div class="CONT_3_TAB">
+                    <div class="TXT_TAB">experiència</div>
+                </div>
+            </div>
+            <div class="CONT_2_EXP">
+                <div class="CONT_3_EXP_INFO">
+                    <div class="TXT_FEINA_H1">Dissenyador Gràfic</div>
+                    <div>
+                        <span class="TXT_FEINA_H2">D.Pack | Barcelona&nbsp;</span>
+                        <span class="TXT_FEINA_P">| 2023 – 2024</span>
+                    </div>
+                    <div class="TXT_FEINA_P">
+                       <img class="IMG_FLOAT_DRETA" src="img/exp-pd.png" alt="empresa" />
+                        Disseny Creatiu, Presentació de Producte 3D, Gestió de Recerca d'Imatges, Retoc d'Imatges,
+                        Gestió de Producció Gràfica, Artfinalització de Packaging, Supervisió Tècnica.
+                    </div>
+                </div>
+              
+            </div>
+            <div class="FILET_EXT">
+                <div class="FILET_INT"></div>
+            </div>
+            <div class="CONT_2_EXP">
+                <div class="CONT_3_EXP_INFO">
+                    <div class="TXT_FEINA_H1">Dissenyador Gràfic</div>
+                    <div>
+                        <span class="TXT_FEINA_H2">Vibranding Design | Granollers&nbsp;</span>
+                        <span class="TXT_FEINA_P">| 2021 – 2022</span>
+                    </div>
+                    <div class="TXT_FEINA_P">
+                       <img class="IMG_FLOAT_DRETA" src="img/exp-vibra.png" alt="empresa" />
+                        Disseny Creatiu, Presentació de Producte 3D, Gestió de Recerca d'Imatges, Retoc d'Imatges,
+                        Gestió de Producció Gràfica, Artfinalització de Packaging, Supervisió Tècnica.
+                    </div>
+                </div>
+              
+            </div>
+            <div class="FILET_EXT">
+                <div class="FILET_INT"></div>
+            </div>
+            <div class="CONT_2_EXP">
+                <div class="CONT_3_EXP_INFO">
+                    <div class="TXT_FEINA_H1">Dissenyador Gràfic | Artfinalista</div>
+                    <div>
+                        <span class="TXT_FEINA_H2">Diadeis-SGSCo | Esplugues de Llobregat&nbsp;</span>
+                        <span class="TXT_FEINA_P">| 2019 – 2021</span>
+                    </div>
+                    <div class="TXT_FEINA_P">
+                       <img class="IMG_FLOAT_DRETA" src="img/exp-dia.png" alt="empresa" />
+                        Disseny Creatiu, Control de Qualitat d'Imatges, Gestió Esko, Disseny de Material en Punt de
+                        Venda, Creació de Visuals de Producte, Artfinalització de Packaging.
+                    </div>
+                </div>
+         
+            </div>
+            <div class="FILET_EXT">
+                <div class="FILET_INT"></div>
+            </div>
+            <div class="CONT_2_EXP">
+                <div class="CONT_3_EXP_INFO">
+                    <div class="TXT_FEINA_H1">Director d'Art</div>
+                    <div>
+                        <span class="TXT_FEINA_H2">Young &amp; Rubicam | BCN&nbsp;</span>
+                        <span class="TXT_FEINA_P">| 2006 – 2018</span>
+                    </div>
+                    <div class="TXT_FEINA_P">
+                       <img class="IMG_FLOAT_DRETA" src="img/exp-yr2+.png" alt="empresa" />
+                        Gestió de Cadena Gràfica, Creació de Packaging i Gràfiques per a Campanyes Publicitàries, Gestió
+                        de Stock de Fotos, Coordinació de Fotografía i Estilisme, Supervisió de Retocs d'Imatge, Gestió
+                        de Compra de Tipografies, Preparació i Coordinació de Maquetes per a Rodatges Publicitaris,
+                        Supervisió i Creació de Visuals 3D per Presentació de Producte, Supervisió i Creació de Visuals
+                        per Postproducció de Video, Creació de Visuals per comunicació Web Online, Supervisió
+                        d'Impressions en Impremtes.
+                    </div>
+                </div>
+          
+            </div>
+            <div class="FILET_EXT">
+                <div class="FILET_INT"></div>
+            </div>
+            <div class="CONT_2_EXP">
+                <div class="CONT_3_EXP_INFO">
+                    <div class="TXT_FEINA_H1">Dissenyador Gràfic</div>
+                    <div>
+                        <span class="TXT_FEINA_H2">Vinizius, Young &amp; Rubicam | BCN</span>
+                        <span class="TXT_FEINA_P">| 1998 – 200</span>
+                    </div>
+                    <div class="TXT_FEINA_P">
+                       <img class="IMG_FLOAT_DRETA" src="img/exp-yr1+.png" alt="empresa" />
+                        Disseny Gràfic, Elaboració de propostes gràfiques per Campanyes Publicitàries, Disseny
+                        Editorial, Realització d'Arts Finals de Packaging, Creació de Material per Punt de Venda.
+                    </div>
+                </div>
+      
+            </div>
+            <div class="FILET_EXT">
+                <div class="FILET_INT"></div>
+            </div>
+            <div class="CONT_2_EXP">
+                <div class="CONT_3_EXP_INFO">
+                    <div class="TXT_FEINA_H1">Dissenyador Gràfic</div>
+                    <div>
+                        <span class="TXT_FEINA_H2">Autònom | BCN</span>
+                        <span class="TXT_FEINA_P">1996 - 1998</span>
+                    </div>
+                    <div class="TXT_FEINA_P">
+                       <img class="IMG_FLOAT_DRETA" src="img/exp-amp.png" alt="empresa" />
+                        Disseny Gràfic, Il·lustració, Dibuix Tècnic, Reprografia, Artfinalització Digital.
+                    </div>
+                </div>
+    
+            </div>
+            <div class="FILET_EXT">
+                <div class="FILET_INT"></div>
+            </div>
+            <div class="CONT_2_EXP">
+                <div class="CONT_3_EXP_INFO">
+                    <div class="TXT_FEINA_H1">Dissenyador Gràfic</div>
+                    <div>
+                        <span class="TXT_FEINA_H2">Temas de Comunicación Publicitaria | BCN </span>
+                        <span class="TXT_P">1996</span>
+                    </div>
+                    <div class="TXT_FEINA_P">
+                    <img class="IMG_FLOAT_DRETA" src="img/exp-tem.png" alt="empresa" />Maquetació Editorial, Il·lustració, Disseny Gràfic.</div>
+                </div>
+   
+            </div>
+            <!-- EDUCACIÓ -->
+            <div class="FILET_GRUIX"></div>
+            <div class="CONT_2_TAB_ALT">
+                <div class="ESQUERRA">
+                    <div class="CONT_3_TAB_ALT">
+                        <div class="TXT_TAB">educació</div>
+                    </div>
+                    <div class="CONT_3_EXP_INFO_ALT">
+                        <div>
+                            <span class="TXT_FEINA_H1">Escola Superior de Disseny i Art "Llotja" | </span>
+                            <span class="TXT_FEINA_P">1993 – 1997</span>
+                        </div>
+                        <div div="TXT_FEINA_P">
+                            Tècnic Superior en Arts Plàstiques i Disseny en Gràfica Publicitària.
+                        </div>
+                        <div class="TXT_FEINA_P">(Graduat en Arts Aplicades, especialitat de Dibuix Publicitari)</div>
+                    </div>
+                </div>
+                <div class="CONT_3_EXP_ICONA_UP">
+                    <img src="img/edu.png" />
+                </div>
+            </div>
+            <!-- VOLUNTARIAT -->
+            <div class="FILET_GRUIX"></div>
+            <div class="CONT_2_TAB_ALT">
+                <div class="ESQUERRA">
+                    <div class="CONT_3_TAB_ALT">
+                        <div class="TXT_TAB">voluntariat</div>
+                    </div>
+                    <div class="CONT_3_EXP_INFO_ALT">
+                        <div>
+                            <span class="TXT_FEINA_H1">Creu Roja Barcelona |</span>
+                            <span class="TXT_FEINA_P">1991 – 1992 </span>
+                        </div>
+                        <div class="TXT_FEINA_H2">Servei d'Atenció a Immigrants, Emigrants i Refugiats (SAIER).</div>
+                        <div class="TXT_FEINA_P">Centre Cívic Cotxeres de Sants</div>
+                    </div>
+                </div>
+                <div class="CONT_3_EXP_ICONA_UP">
+                    <img src="img/vol+.png" />
+                </div>
+            </div>
+            <!-- COMPETÊNCIES -->
+            <div class="FILET_GRUIX"></div>
+            <div class="CONT_2_TAB">
+                <div class="CONT_3_TAB">
+                    <div class="TXT_TAB">competències professionals</div>
+                </div>
+            </div>
+            <div class="TAULA_COMPE_GRID">
+                <div class="TAULA_COMPE_GRID_LOGO_1">
+                    <img src="img/comp-adobe3.svg" />
+                </div>
+                <div class="TAULA_COMPE_GRID_CASELLA">
+                    <div class="TXT_COMPE_H">DISSENY</div>
+                    <div class="TXT_COMPE_H">Photoshop, Illustrator, Indesign, Acrobat, Adobe Cloud</div>
+                    <div class="TXT_COMPE_P">Disseny Gràfic, Edició Imatge, Edició Editorial.</div>
+                </div>
+                <div class="TAULA_COMPE_GRID_LOGO_1">
+                    <img src="img/comp-esko7.svg" />
+                </div>
+                <div class="TAULA_COMPE_GRID_CASELLA">
+                    <div class="TXT_COMPE_H">PREIMPRESSIÓ</div>
+                    <div class="TXT_COMPE_H">Esko, GMG</div>
+                    <div class="TXT_COMPE_P">
+                        Control de Qualitat de Documents per Preimpressió. Gestió de Proves de Color
+                    </div>
+                </div>
+                <div class="TAULA_COMPE_GRID_LOGO_3">
+                    <img src="img/comp-html.png" />
+                    <img src="img/comp-css2.png" />
+                    <img src="img/comp-fg3.png" />
+                </div>
+                <div class="TAULA_COMPE_GRID_CASELLA">
+                    <div class="TXT_COMPE_H">WEB/UI</div>
+                    <div class="TXT_COMPE_H">HTML, CSS, Figma</div>
+                    <div class="TXT_COMPE_P">Disseny Web, Edició de codi</div>
+                </div>
+                <div class="TAULA_COMPE_GRID_LOGO_3">
+                    <img src="img/comp-ms.png" />
+                    <img src="img/comp-gw3.svg" />
+                    <img src="img/comp-lib.png" />
+                </div>
+                <div class="TAULA_COMPE_GRID_CASELLA">
+                    <div class="TXT_COMPE_H">OFIMÀTICA</div>
+                    <div class="TXT_COMPE_H">MS Office, OpenOffice, LibreOffice, Google Workspace</div>
+                    <div class="TXT_COMPE_P">
+                        Tractament de text, Presentacions, Fulls de càlcul. (Nivell ACTIC Avançat).
+                    </div>
+                </div>
+                <div class="TAULA_COMPE_GRID_LOGO_3">
+                    <img src="img/comp-c4d.png" />
+                    <img src="img/comp-blend.png" />
+                    <img src="img/comp-360.png" />
+                </div>
+                <div class="TAULA_COMPE_GRID_CASELLA">
+                    <div class="TXT_COMPE_H">3D</div>
+                    <div class="TXT_COMPE_H">Cinema4D, Blender. Fusion360</div>
+                    <div class="TXT_COMPE_P">Visuals 3D per Presentació de Producte, Modelat CAD.</div>
+                </div>
+                <div class="TAULA_COMPE_GRID_LOGO_2">
+                    <img src="img/comp-gimp.png" />
+                    <img src="img/comp-ink.png" />
+                </div>
+                <div class="TAULA_COMPE_GRID_CASELLA">
+                    <div class="TXT_COMPE_H">DISSENY OPEN SOURCE</div>
+                    <div class="TXT_COMPE_H">Gimp, Inkscape</div>
+                    <div class="TXT_COMPE_P">Edició Imatges Digitals i Vectorials.</div>
+                </div>
+            </div>
+            <!-- IDIOMES -->
+            <div class="FILET_GRUIX"></div>
+            <div class="CONT_2_TAB">
+                <div class="CONT_3_TAB">
+                    <div class="TXT_TAB">idiomes</div>
+                </div>
+            </div>
+            <div class="TAULA_IDM_GRID">
+                <div class="TXT_IDIOMA_H">Català:</div>
+                <div class="TXT_IDIOMA_P">Certificat C1.</div>
+                <div class="TXT_IDIOMA_H">Castellà:</div>
+                <div class="TXT_IDIOMA_P">Graduat escolar.</div>
+                <div class="TXT_IDIOMA_H">Anglès:</div>
+                <div class="TXT_IDIOMA_P">Competència professional.</div>
+                <div class="TXT_IDIOMA_H">Françès:</div>
+                <div class="TXT_IDIOMA_P">Competència bàsica.</div>
+            </div>
+            <!-- CONTACTE -->
+            <div class="FILET_GRUIX"></div>
+            <div class="CONT_2_TAB">
+                <div class="CONT_3_TAB">
+                    <div class="TXT_TAB">contacte</div>
+                </div>
+            </div>
+            <div class="CONT_2_CONTACT">
+                <div class="TAULA_CONTACT_GRID">
+                    <div>
+                        <img src="img/linkedin-round.png" />
+                    </div>
+                    <div>
+                        <a href="https://www.linkedin.com/in/f%C3%A8lix-zurita-62b3a111/"
+                            >linkedin.com/in/felix-zurita</a
+                        >
+                    </div>
+                    <div>
+                        <img src="img/behance-round.png" />
+                    </div>
+                    <div><a href="https://www.behance.net/gallery/28216789/pack">behance.net/gallery/pack</a></div>
+                    <div>
+                        <img src="img/gallery-round.png" />
+                    </div>
+                    <div><a href="https://fzbstudio.github.io/grid-gallery-5/">Gallery Portfolio Online</a></div>
+                    <div>
+                        <img src="img/email1.png" />
+                    </div>
+                    <div><a href="mailto:felixzb@gmail.com">Correu Electrònic</a></div>
+                    <div>
+                        <img src="img/phone1.png" />
+                    </div>
+                    <div><a href="tel:+34657897436">Telèfon</a></div>
+                </div>
+                <div class="CONT_2_CONT_ICONA_EGO">
+                    <img src="img/FZo.png" />
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+<!-- 28/7/25  7:00    -->
